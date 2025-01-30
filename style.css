@@ -1,0 +1,22 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  width: 100%;
+}
+.nav-logo {
+  width: 200px;
+}
+.navbar {
+  background-color: #e15f41;
+}
+.nav .nav-link.active {
+  background-color: #fff;
+  color: #e15f41;
+}
+nav .nav-link {
+  color: #fff;
+}
+.navbar-toggler {
+  background-color: #fff;
+}
