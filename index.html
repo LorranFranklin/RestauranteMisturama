@@ -15,30 +15,33 @@
     <title>Misturama</title>
   </head>
   <body>
-    <header class="navbar navbar-expand-lg sticky-top p-3">
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
       <div class="container">
+        <!-- logo do restaurante  -->
         <div class="nav-logo">
           <img src="./img/misturama01.png" alt="Logo do Restaurante" />
         </div>
+        <!-- menu de navegação 'Hamburger' -->
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- menu de navegação -->
         <nav class="collapse navbar-collapse justify-content-end" id="menu-navegacao">
           <ul class="nav nav-pills d-block d-md-flex">
             <li class="nav-item fw-bold">
-              <a class="nav-link active" href="#">
+              <a href="#sobre-o-misturama" class="nav-link">
                 <i class="bi bi-house-door me-1"></i>
                 Sobre o Misturama
               </a>
             </li>
             <li class="nav-item fw-bold">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="">
                 <i class="bi bi-calendar-check me-1"></i>
                 Eventos
               </a>
             </li>
             <li class="nav-item fw-bold">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="">
                 <i class="bi bi-card-text me-1"></i>
                 Cardápio
               </a>
@@ -54,44 +57,80 @@
       </div>
     </header>
 
-    <section id="sobre-o-misturama">
-      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-        <!-- INDICADORES DE CAROUSEL  -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+      <section id="sobre-o-misturama">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+          <!-- INDICADORES DE CAROUSEL  -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <!-- IMAGENS DO CAROUSEL -->
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="./img/slides/slide1.png" class="d-block w-100" alt="Imagem 1" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./img/slides/slide2.png" class="d-block w-100" alt="Imagem 2" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./img/slides/slide3.png" class="d-block w-100" alt="Imagem 3" />
+            </div>
+          </div>
+          <!-- BUTOES DO CAROUSEL  -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden"></span>
+          </button>
         </div>
-        <!-- IMAGENS DO CAROUSEL -->
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="./img/slides/slide1.png" class="d-block w-100" alt="Imagem 1" />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="./img/slides/slide2.png" class="d-block w-100" alt="Imagem 2" />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="./img/slides/slide3.png" class="d-block w-100" alt="Imagem 3" />
+        <!-- SOBRE O MISTURAMA -->
+        <div class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="./img/restaurante02.jpg"
+                  alt="Foto do ambiente interno do Misturama"
+                  class="d-block w-100 rounded"
+                />
+              </div>
+              <div class="col-md-7">
+                <h2 class="fw-bold section-title">Sobre <span>o Misturama</span></h2>
+                <p>
+                  Desde 2012, o Restaurante Misturama oferece aos seus visitantes uma experiência gastronômica única,
+                  combinando receitas clássicas com um toque de modernidade. Localizado no coração da cidade, nosso
+                  estabelecimento é um refúgio acolhedor onde amigos e famílias se reúnem para desfrutar de momentos
+                  especiais.
+                </p>
+                <h3 class="fw-bold section-title">Sobre <span>o Espaço</span></h3>
+                <p>
+                  Nosso ambiente é cuidadosamente decorado para evocar a sensação de conforto e aconchego, com uma iluminação
+                  suave e música ambiente que complementam a experiência. Venha nos visitar e deixe-se encantar pelo sabor da
+                  tradição!
+                </p>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- BUTOES DO CAROUSEL  -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden"></span>
-        </button>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

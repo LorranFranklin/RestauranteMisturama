@@ -20,3 +20,9 @@ nav .nav-link {
 .navbar-toggler {
   background-color: #fff;
 }
+.section-title {
+  font-family: 'Pacifico', 'cursive';
+}
+.section-title span {
+  color: #e15f41;
+}
