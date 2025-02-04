@@ -35,14 +35,30 @@ img {
   background-color: #e46447;
   color: #fff;
 }
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
   background-color: #e15f36;
   color: #fff;
 }
 .nav-cardapio .nav-link:hover {
   color: #db3c0b;
 }
-
 #cardapio {
   background-color: #ffeae6;
+}
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+.social-links a {
+  text-decoration: none;
+}
+#fale-conosco button:hover {
+  background-color: #db3c0b;
+}
+
+@media (max-width: 77px) {
+  .carousel-item img {
+    height: 280px;
+  }
 }
